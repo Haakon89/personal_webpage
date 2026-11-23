@@ -1,0 +1,6 @@
+# macOS metadata files (e.g. from unzipped downloads)
+._*
+.DS_Store
+# Windows
+Thumbs.db
+desktop.ini

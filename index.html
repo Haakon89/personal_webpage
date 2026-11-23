@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Strict CSP: everything is served from this origin, no inline scripts or third-party resources. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Håkon Sørensen — IT Security &amp; Software Development</title>
+  <meta name="description" content="Håkon Sørensen — MSc in information security from the University of Bergen. IT security and software development.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span lang="en">Skip to content</span><span lang="no">Hopp til innhold</span></a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="#top">hs<span class="accent">@</span>bergen<span class="cursor">_</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">☰</button>
+      <nav id="nav-links" class="nav__links">
+        <a href="#about"><span lang="en">About</span><span lang="no">Om meg</span></a>
+        <a href="#projects"><span lang="en">Projects</span><span lang="no">Prosjekter</span></a>
+        <a href="#experience"><span lang="en">Experience</span><span lang="no">Erfaring</span></a>
+        <a href="#skills"><span lang="en">Skills</span><span lang="no">Ferdigheter</span></a>
+        <a href="#contact"><span lang="en">Contact</span><span lang="no">Kontakt</span></a>
+        <button class="lang" id="lang-toggle" aria-label="Switch language / Bytt språk">
+          <span lang="en">NO</span><span lang="no">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap" id="top">
+      <div class="hero__text">
+        <p class="eyebrow">
+          <span lang="en">IT security · Software development</span>
+          <span lang="no">IT-sikkerhet · Programvareutvikling</span>
+        </p>
+        <h1>Håkon Sørensen</h1>
+        <p class="lead">
+          <span lang="en">Security-minded developer with an MSc in information security from the University of Bergen. I like taking systems apart to see how they break, and building tools that make them easier to test.</span>
+          <span lang="no">Sikkerhetsorientert utvikler med master i datasikkerhet fra Universitetet i Bergen. Jeg liker å plukke systemer fra hverandre for å se hvordan de brytes, og å bygge verktøy som gjør dem enklere å teste.</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects"><span lang="en">See my work</span><span lang="no">Se arbeidet mitt</span></a>
+          <a class="btn" href="#contact"><span lang="en">Get in touch</span><span lang="no">Ta kontakt</span></a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal__bar"><i></i><i></i><i></i><span>~/haakon</span></div>
+        <pre class="terminal__body" id="terminal"></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section wrap" id="about">
+      <h2><span class="num">01.</span> <span lang="en">About me</span><span lang="no">Om meg</span></h2>
+      <div class="about">
+        <div class="about__text">
+          <p lang="en">I took the long way into security. I started out in 3D design and animation, founded my own studio, and spent several years at Nordisk Film Kino — first as technical lead responsible for projectors, screen systems and point-of-sale, later as sales manager with staff and purchasing responsibility.</p>
+          <p lang="no">Jeg tok den lange veien inn i sikkerhet. Jeg startet med 3D-design og animasjon, grunnla mitt eget studio, og jobbet flere år på Nordisk Film Kino — først som teknisk ansvarlig for projektorer, skjermsystemer og kassesystemer, senere som salgsleder med personal- og innkjøpsansvar.</p>
+
+          <p lang="en">When the pandemic shut cinemas down, I went back to university to study information security at UiB — a Bachelor in Informatics (Security) followed by a Master's in Secure and Reliable Communication. Along the way I've been a group leader for the software security course INF226, and CTF lead and deputy chair of the student security association Helt-Sikker.</p>
+          <p lang="no">Da pandemien stengte kinoene, gikk jeg tilbake til universitetet for å studere datasikkerhet ved UiB — en bachelor i informatikk (datasikkerhet) og deretter en master i trygg og pålitelig kommunikasjon. Underveis har jeg vært gruppeleder i programvaresikkerhetsfaget INF226, og CTF-ansvarlig og nestleder i studentforeningen Helt-Sikker.</p>
+
+          <p lang="en">That background means I bring more than code: years of responsibility for live technical systems where downtime costs money, experience leading people, and the habit of explaining technical problems to non-technical colleagues.</p>
+          <p lang="no">Den bakgrunnen gjør at jeg tar med meg mer enn kode: mange år med ansvar for tekniske systemer i drift der nedetid koster penger, erfaring med å lede folk, og vanen med å forklare tekniske problemer til ikke-tekniske kolleger.</p>
+        </div>
+        <ul class="facts">
+          <li><span class="facts__k">📍</span> Bergen, Norway</li>
+          <li><span class="facts__k">🎓</span> <span lang="en">MSc, Secure &amp; Reliable Communication — UiB</span><span lang="no">Master, Trygg og pålitelig kommunikasjon — UiB</span></li>
+          <li><span class="facts__k">🛡️</span> <span lang="en">CTF lead, Helt-Sikker</span><span lang="no">CTF-ansvarlig, Helt-Sikker</span></li>
+          <li><span class="facts__k">🗣️</span> <span lang="en">Norwegian, English</span><span lang="no">Norsk, engelsk</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section wrap" id="projects">
+      <h2><span class="num">02.</span> <span lang="en">Projects</span><span lang="no">Prosjekter</span></h2>
+
+      <article class="project project--featured">
+        <div class="project__head">
+          <p class="eyebrow"><span lang="en">Featured · Master's thesis</span><span lang="no">Fremhevet · Masteroppgave</span></p>
+          <h3>CNet-Sim</h3>
+          <p class="project__sub"><span lang="en">Container-based network simulator for traffic analysis and attack testing</span><span lang="no">Containerbasert nettverkssimulator for trafikkanalyse og angrepstesting</span></p>
+        </div>
+        <div class="project__body">
+          <p lang="en">A tool for designing network topologies in a web interface and running them as real Docker containers. You place PCs, routers, web and file servers, and bots, configure traffic and attacks between them, set latency and distance, and then capture the resulting traffic for analysis — in either interactive or timed simulation mode.</p>
+          <p lang="no">Et verktøy for å designe nettverkstopologier i et webgrensesnitt og kjøre dem som ekte Docker-containere. Du plasserer PC-er, rutere, web- og filservere og botter, konfigurerer trafikk og angrep mellom dem, setter forsinkelse og avstand, og fanger deretter opp trafikken for analyse — i interaktiv eller tidsstyrt simuleringsmodus.</p>
+          <ul class="bullets">
+            <li lang="en">Visual topology editor with reusable network templates</li>
+            <li lang="no">Visuell topologi-editor med gjenbrukbare nettverksmaler</li>
+            <li lang="en">Configurable traffic and attack scenarios, including botnet nodes</li>
+            <li lang="no">Konfigurerbare trafikk- og angrepsscenarier, inkludert botnett-noder</li>
+            <li lang="en">Packet capture for analysing how devices communicate</li>
+            <li lang="no">Pakkefangst for å analysere hvordan enheter kommuniserer</li>
+            <li lang="en">PR-based workflow with linting and tests</li>
+            <li lang="no">PR-basert arbeidsflyt med linting og tester</li>
+          </ul>
+          <ul class="tags"><li>Docker</li><li>Node.js</li><li>JavaScript</li><li>Go</li><li>Bash</li><li>Networking</li></ul>
+          <a class="link" href="https://github.com/Haakon89/cnet-sim" target="_blank" rel="noopener noreferrer"><span lang="en">View on GitHub</span><span lang="no">Se på GitHub</span> →</a>
+        </div>
+      </article>
+
+      <!--
+        Add more projects by copying a .project card below.
+        Good candidates for a security role: CTF write-ups, INF226 lab work you're allowed to share,
+        a pentest of a deliberately vulnerable app (DVWA/Juice Shop) with your methodology, small Go/Python tools.
+      -->
+      <div class="grid">
+        <article class="project">
+          <p class="eyebrow">CTF</p>
+          <h3><span lang="en">CTF challenges &amp; write-ups</span><span lang="no">CTF-oppgaver og løsninger</span></h3>
+          <p lang="en">As CTF lead in Helt-Sikker I design challenges and run tournaments for students in Bergen. Write-ups showing my approach to web, reversing (Ghidra) and forensics (Wireshark) challenges coming here.</p>
+          <p lang="no">Som CTF-ansvarlig i Helt-Sikker lager jeg oppgaver og arrangerer turneringer for studenter i Bergen. Løsninger som viser hvordan jeg angriper web-, reversing- (Ghidra) og forensics-oppgaver (Wireshark) kommer her.</p>
+          <ul class="tags"><li>Web</li><li>Reversing</li><li>Forensics</li></ul>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow"><span lang="en">Teaching</span><span lang="no">Undervisning</span></p>
+          <h3>INF226 — <span lang="en">Software Security</span><span lang="no">Programvaresikkerhet</span></h3>
+          <p lang="en">Group leader for UiB's software security course, covering buffer overflows, SQL injection, XSS and secure design. I helped students through assignments and assisted with grading.</p>
+          <p lang="no">Gruppeleder i UiBs fag i programvaresikkerhet, som dekker buffer overflow, SQL-injeksjon, XSS og sikker design. Jeg hjalp studenter med oppgaver og bisto med retting.</p>
+          <ul class="tags"><li>Memory safety</li><li>OWASP</li><li>Secure coding</li></ul>
+        </article>
+
+        <article class="project">
+          <p class="eyebrow"><span lang="en">This site</span><span lang="no">Denne siden</span></p>
+          <h3><span lang="en">Secure-by-default portfolio</span><span lang="no">Sikker portefølje som standard</span></h3>
+          <p lang="en">Hand-written HTML, CSS and JavaScript with no third-party dependencies, a strict Content Security Policy and no tracking — a small attack surface by design.</p>
+          <p lang="no">Håndskrevet HTML, CSS og JavaScript uten tredjepartsavhengigheter, en streng Content Security Policy og ingen sporing — liten angrepsflate med vilje.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>CSP</li></ul>
+          <a class="link" href="https://github.com/Haakon89/personal_webpage" target="_blank" rel="noopener noreferrer"><span lang="en">Source</span><span lang="no">Kildekode</span> →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience">
+      <h2><span class="num">03.</span> <span lang="en">Experience</span><span lang="no">Erfaring</span></h2>
+      <ol class="timeline">
+        <li>
+          <p class="when"><span lang="en">Aug – Dec 2025</span><span lang="no">Aug – des 2025</span></p>
+          <h3><span lang="en">Group Leader, Software Security (INF226)</span><span lang="no">Gruppeleder, Programvaresikkerhet (INF226)</span> <span class="org">· UiB</span></h3>
+          <p lang="en">Led lab groups on buffer overflows, SQL injection and XSS; assisted the course lead with grading.</p>
+          <p lang="no">Ledet grupper innen buffer overflow, SQL-injeksjon og XSS; bisto emneansvarlig med retting.</p>
+        </li>
+        <li>
+          <p class="when"><span lang="en">Ongoing</span><span lang="no">Pågående</span></p>
+          <h3><span lang="en">CTF Lead &amp; Deputy Chair</span><span lang="no">CTF-ansvarlig og nestleder</span> <span class="org">· Helt-Sikker</span></h3>
+          <p lang="en">Organise CTF challenges and tournaments for students in Bergen, plus administrative work for the association.</p>
+          <p lang="no">Organiserer CTF-oppgaver og turneringer for studenter i Bergen, samt administrativt arbeid for foreningen.</p>
+        </li>
+        <li>
+          <p class="when">2023 – 2024</p>
+          <h3><span lang="en">Student Assistant / Mentor</span><span lang="no">Studentassistent / mentor</span> <span class="org">· UiB</span></h3>
+          <p lang="en">Mentored new students in the Computer Science/Biotech and Information Security groups.</p>
+          <p lang="no">Mentor for nye studenter i Datateknologi/Bioteknologi- og Datasikkerhetsgruppen.</p>
+        </li>
+        <li>
+          <p class="when">2019 – 2021</p>
+          <h3><span lang="en">Sales Manager</span><span lang="no">Salgsleder</span> <span class="org">· Nordisk Film Kino</span></h3>
+          <p lang="en">Staff responsibility and purchasing of goods and resources for the cinema.</p>
+          <p lang="no">Personalansvar og innkjøp av varer og ressurser til kinoen.</p>
+        </li>
+        <li>
+          <p class="when">2016 – 2019</p>
+          <h3><span lang="en">Technical Lead</span><span lang="no">Teknisk ansvarlig</span> <span class="org">· Nordisk Film Kino</span></h3>
+          <p lang="en">Maintained projectors, screen systems and point-of-sale systems; trained new projectionists.</p>
+          <p lang="no">Vedlikehold av projektorer, skjermsystemer og kassesystemer; opplæring av nye projeksjonister.</p>
+        </li>
+        <li>
+          <p class="when">2013 – 2022</p>
+          <h3><span lang="en">Founder &amp; Managing Director</span><span lang="no">Grunnlegger og daglig leder</span> <span class="org">· Stick-Man Studio AS</span></h3>
+          <p lang="en">Ran a studio delivering film, 3D design and animation for small businesses in the Ålesund area.</p>
+          <p lang="no">Drev et studio som leverte film, 3D-design og animasjon til småbedrifter i Ålesundsområdet.</p>
+        </li>
+      </ol>
+
+      <h3 class="subhead"><span lang="en">Education</span><span lang="no">Utdanning</span></h3>
+      <ul class="edu">
+        <li><strong><span lang="en">MSc, Secure and Reliable Communication</span><span lang="no">Master, Trygg og pålitelig kommunikasjon</span></strong> — <span lang="en">University of Bergen</span><span lang="no">Universitetet i Bergen</span>, 2025–2026</li>
+        <li><strong><span lang="en">BSc, Informatics: Information Security</span><span lang="no">Bachelor, Informatikk: Datasikkerhet</span></strong> — <span lang="en">University of Bergen</span><span lang="no">Universitetet i Bergen</span>, 2022–2024</li>
+        <li><strong>MA Digital Character Animation</strong> — Teesside University, 2012–2013</li>
+        <li><strong>BA Creative Digital Arts</strong> — Teesside University, 2011–2012</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills">
+      <h2><span class="num">04.</span> <span lang="en">Skills</span><span lang="no">Ferdigheter</span></h2>
+      <div class="skills">
+        <div class="skill">
+          <h3><span lang="en">Security</span><span lang="no">Sikkerhet</span></h3>
+          <ul class="tags"><li>Linux</li><li>Nmap</li><li>Wireshark</li><li>Ghidra</li><li>OWASP ZAP</li><li><span lang="en">Penetration testing</span><span lang="no">Penetrasjonstesting</span></li><li><span lang="en">Cryptography</span><span lang="no">Kryptografi</span></li></ul>
+        </div>
+        <div class="skill">
+          <h3><span lang="en">Programming</span><span lang="no">Programmering</span></h3>
+          <ul class="tags"><li>Python</li><li>Go</li><li>Java</li><li>JavaScript</li><li>Node.js</li><li>Bash</li></ul>
+        </div>
+        <div class="skill">
+          <h3>DevOps</h3>
+          <ul class="tags"><li>Docker</li><li>Git</li><li>GitHub</li></ul>
+        </div>
+        <div class="skill">
+          <h3><span lang="en">Also</span><span lang="no">Også</span></h3>
+          <ul class="tags"><li>3ds Max</li><li>Maya</li><li>After Effects</li><li><span lang="en">Leadership</span><span lang="no">Ledelse</span></li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap contact" id="contact">
+      <h2><span class="num">05.</span> <span lang="en">Contact</span><span lang="no">Kontakt</span></h2>
+      <p class="lead">
+        <span lang="en">I'm looking for roles in IT security and software development. If you think I'd be a good fit, I'd love to hear from you.</span>
+        <span lang="no">Jeg ser etter stillinger innen IT-sikkerhet og programvareutvikling. Tror du jeg kan passe inn, hører jeg gjerne fra deg.</span>
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--icon" href="mailto:Haakonsorensen89@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6.5 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Haakonsorensen89@gmail.com
+        </a>
+        <!-- Official logos go in assets/icons/ (see README). If a file is missing, js/main.js hides the image and the text label still shows. -->
+        <a class="btn btn--icon" href="https://www.linkedin.com/in/h%C3%A5kon-s%C3%B8rensen-6ba48185/" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="assets/icons/InBug-White.png" alt="" width="20" height="20">
+          LinkedIn
+        </a>
+        <a class="btn btn--icon" href="https://github.com/Haakon89" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="assets/icons/GitHub_Invertocat_White.png" alt="" width="20" height="20">
+          GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Håkon Sørensen · <span lang="en">No cookies, no trackers.</span><span lang="no">Ingen cookies, ingen sporing.</span></p>
+  </footer>
+</body>
+</html>
